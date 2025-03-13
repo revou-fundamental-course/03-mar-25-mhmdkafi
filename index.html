@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Montserrat:ital,wght@1,300&family=Oswald:wght@300;400&family=Poppins:ital,wght@0,300;1,400&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3ddb457d59.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/luffy.png" alt="Logo" class="logo-img">
+        </div>
+        
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#MyProfile">My Profile</a>
+            <a href="#projects-section">Our Project</a>
+            <a href="#message">Message Us</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <header id="home-header">
+            <h1><span class="auto-type"></span></h1>
+            <p>Selamat Datang di website Portfolio saya! Website ini merupakan tugas dari pembelajaran Course Software Engineering RevoU.</p>
+            <p>Saya seorang Software Engineer dengan minat di bidang Web Development, Game Development, dan UI/UX Design. Di sini, Anda bisa melihat proyek-proyek yang telah saya buat dan perjalanan saya dalam dunia teknologi.</p>
+            <a href="#projects-section" class="explore-btn">Lihat Proyek Saya</a>
+        </header>
+    
+        <div class="banner-container">
+            <div class="banner-slide fade">
+                <img src="assets/p1.jpg" alt="Image 1">
+                <div class="banner-text">Proyek GameZone (Website Gaming)</div>
+            </div>
+            <div class="banner-slide fade">
+                <img src="assets/Beasiswa.jpg" alt="Image 2">
+                <div class="banner-text">Aplikasi BeasiswaKita</div>
+            </div>
+            <div class="banner-slide fade">
+                <img src="assets/lapangin.jpg" alt="Image 3">
+                <div class="banner-text">Website Menyewa lapangan</div>
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+    
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="MyProfile">
+        <div class="profile-container">
+            <div class="profile-header">
+                <h2 class="profile">My Profile</h2>
+            </div>
+            <img src="assets/kahfi.jpg" alt="Profile Picture" class="profile-img">
+            <div class="profile-info">
+                <h1>Muhammad Kahfi Bachtiar</h1>
+                <p>Software Engineer | Web Developer | Gamer</p>
+                <p>
+                    Saya seorang software engineer yang memiliki sedikit pengalaman dalam pengembangan web, frontend, dan backend.
+                    Saya juga memiliki minat dalam dunia game development dan UI/UX design.
+                </p>
+                <h3>Keahlian</h3>
+                <div class="skills-container">
+                    <div class="skill"><i class="fa-brands fa-laravel"></i> Laravel (PHP)</div>
+                    <div class="skill"><i class="fa-brands fa-js"></i> JavaScript (React.js, Vue.js)</div>
+                    <div class="skill"><i class="fa-solid fa-code"></i> HTML, CSS, Tailwind CSS, Bootstrap</div>
+                    <div class="skill"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/mhmdkafi" target="_blank">GitHub</a>
+                    <a href="https://www.instagram.com/mhmdkafib/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="projects-section">
+        <h2 class="section-title">Our Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="assets/p1.jpg" alt="Project 1">
+                <h3>Game Zone</h3>
+                <p>Project ini saya membuat Website untuk game ada, beberapa game yang saya masukkan ke dalam website, dalam project ini hanya menggunakan html dan css only</p>
+            </div>
+            <div class="project-card">
+                <img src="assets/lapangin.jpg" alt="Project 2">
+                <h3>Lapangin</h3>
+                <p>Lapangin adalah sebuah website untuk mempermudah user dalam menyewa sebuah lapangan seperti (Lapangan futsal, Lapangan Basket, Lapangan Tennis dll), dalam project ini menggunakan html,css dan javascript</p>
+            </div>
+            <div class="project-card">
+                <img src="assets/Beasiswa.jpg" alt="Project 3">
+                <h3>Beasiswa</h3>
+                <p>Beasiswa Kita merupakan platform website yang menyediakan informasi-informasi terkait biasiswa yang tersedia serta menjadi wadah bagi pelamar untuk langsung mendaftar sesuai dengan ketentuan yang cocok dengan diri mereka.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="message-us">
+        <h2>Message Us</h2>
+        
+        <div id="message-container">
+            <form id="messageForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+    
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Laki - Laki">Laki - Laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+    
+                <input type="date" id="dob" required>
+    
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="messageDisplay">
+                <h3>Messages:</h3>
+                <ul id="messageList"></ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer style="text-align: right; padding: 10px 30px; background: white; box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); margin-top: 30px;">
+        <p>Created By <a href="#">RevoU</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
