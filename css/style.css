@@ -130,7 +130,7 @@ nav {
 
 .banner-slide img {
   width: 100%;
-  height: 600px;
+  height: 700px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -148,7 +148,6 @@ nav {
   border-radius: 10px;
 }
 
-/* Tombol navigasi */
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -170,7 +169,6 @@ nav {
 .prev { left: 20px; }
 .next { right: 20px; }
 
-/* Indikator Slide */
 .dots-container {
   text-align: center;
   margin-top: 10px;
@@ -190,7 +188,6 @@ nav {
   background-color: #00d9ff;
 }
 
-/* Efek animasi */
 .fade {
   animation: fadeEffect 1.5s;
 }
@@ -467,14 +464,83 @@ nav {
 }
 
 
-@media (max-width: 768px) {
-  #message-container {
-      flex-direction: column;
-      align-items: center;
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 10px;
   }
+  .nav-links a {
+    padding: 8px 12px;
+  }
+  #home-header h1 {
+    font-size: 32px;
+  }
+  .banner-slide img {
+    height: 500px;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  #home-header h1 {
+    font-size: 28px;
+  }
+  .banner-slide img {
+    height: 400px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+  #home-header h1 {
+    font-size: 24px;
+  }
+  .banner-slide img {
+    height: 300px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
   #messageForm, #messageDisplay {
-      width: 100%;
-      max-width: 400px;
+    width: 100%;
+  }
+  #message-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 }
